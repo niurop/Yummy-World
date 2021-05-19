@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.grid-container {
+  margin: 2ch 15vw 2ch 15vw;
+  display: grid;
+  grid-template-areas:
+    'ti ti'
+    'in im'
+    'in de';
+}
+
+.grid-title {
+  background-color: green;
+  grid-area: ti;
+}
+
+.grid-ingredients {
+  background-color: gray;
+  grid-area: in;
+}
+
+.grid-image {
+  background-color: blue;
+  grid-area: im;
+}
+
+.grid-description {
+  background-color: yellow;
+  grid-area: de;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .grid-container {
+    margin: 2ch 1vw 2ch 1vw;
+    display: grid;
+    grid-template-areas:
+      'ti'
+      'im'
+      'in'
+      'de';
+  }
+}
+
+
